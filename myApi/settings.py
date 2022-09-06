@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-kea9_vz#^802gvest4(40p#huq+uaelh)_3a4w4bpotb)nl*sf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['alextodor.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    'alextodor.pythonanywhere.com', 
+    '127.0.0.1',
+    'localhost'
+    ]
 
 
 # Application definition
@@ -37,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todo',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
